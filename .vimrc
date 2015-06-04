@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 set incsearch                   " Automatically begins searching as you type
 set ignorecase                  " Ignores case when pattern matching
 set smartcase                   " Ignores ignorecase when pattern contains uppercase characters
