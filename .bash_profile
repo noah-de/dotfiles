@@ -15,7 +15,6 @@ export PS1="\[`EXT_COLOR 203`\]\u\[`CLOSE_COLOR`\]@\[`EXT_COLOR 208`\]\H\[`CLOSE
 export PATH=/usr/local/bin:$PATH
 
 # Setting PATH for Python 3.4
-# The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export PATH
 export PATH=/opt/bro/bin/:$PATH
