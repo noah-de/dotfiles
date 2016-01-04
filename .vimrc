@@ -24,8 +24,8 @@ set cinoptions=l1,c4,(s,U1,w1,m1,j1,J1
 
 set expandtab                   " Uses spaces instead of tab characters
 set smarttab                    " Helps with backspacing because of expandtab
-set softtabstop=4               " Number of spaces that a tab counts for
-set shiftwidth=4                " Number of spaces to use for autoindent
+set softtabstop=2               " Number of spaces that a tab counts for
+set shiftwidth=2                " Number of spaces to use for autoindent
 set shiftround                  " Rounds indent to a multiple of shiftwidth
 
 set nojoinspaces                " Prevents inserting two spaces after punctuation on a join (it's not 1990 anymore)
