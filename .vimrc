@@ -1,3 +1,6 @@
+call pathogen#infect()  
+let g:airline_powerline_fonts = 1 
+
 set incsearch                   " Automatically begins searching as you type
 set ignorecase                  " Ignores case when pattern matching
 set smartcase                   " Ignores ignorecase when pattern contains uppercase characters
