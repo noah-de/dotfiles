@@ -1,4 +1,10 @@
 call pathogen#infect()
+let g:airline_powerline_fonts = 1
+
+" adding this for vim-instant-markdown                                                                        
+" https://github.com/suan/vim-instant-markdown                                                                
+filetype plugin on
+    
 
 set incsearch                   " Automatically begins searching as you type
 set ignorecase                  " Ignores case when pattern matching
