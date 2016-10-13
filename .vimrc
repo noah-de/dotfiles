@@ -1,5 +1,5 @@
-call pathogen#infect()  
-let g:airline_powerline_fonts = 1 
+call pathogen#infect()
+let g:airline_powerline_fonts = 1
 
 " adding this for vim-instant-markdown                                                                        
 " https://github.com/suan/vim-instant-markdown                                                                
@@ -49,18 +49,19 @@ set cryptmethod=blowfish        " Use (much) stronger blowfish encryption
 syntax enable
 colorscheme desert
 
-set colorcolumn=80              " Draw a visual line down the 80th column
+set colorcolumn=79 " Draw a visual line down the 80th column
+set textwidth=79
 
 set foldmethod=marker           "fdm:   looks for patterns of triple-braces in a file
 set foldcolumn=4                "fdc:   creates a small left-hand gutter for displaying fold info
 
 set encoding=utf-8
-set relativenumber              "rnu:   show line numbers relative to the current line; <leader>u to toggle
+"set relativenumber             "rnu:   show line numbers relative to the current line; <leader>u to toggle
 set number                      "nu:    show the actual line number for the current line in relativenumber
 set showmode                    "smd:   shows current vi mode in lower left
 set cursorline                  "cul:   highlights the current line
 set showcmd                     "sc:    shows typed commands
-set cmdheight=2                 "ch:    make a little more room for error messages
+set cmdheight=1                 "ch:    make a little more room for error messages
 set sidescroll=2                "ss:    only scroll horizontally little by little
 set scrolloff=1                 "so:    places a line between the current line and the screen edge
 set sidescrolloff=2             "siso:  places a couple columns between the current column and the screen edge
@@ -107,3 +108,10 @@ map <F12> :syntax sync fromstart<cr>
 let g:matchparen_insert_timeout = 5
 set synmaxcol=500               " Stop syntax highlighting on very long lines
 
+let &colorcolumn=join(range(81,999),",")
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
