@@ -1,7 +1,6 @@
 function EXT_COLOR () { echo -ne "\e[38;5;$1m"; }
 function CLOSE_COLOR () { echo -ne '\e[m'; }
 
-alias ll="ls -la"
 
 # git aliases
 alias gti="git"
@@ -10,7 +9,6 @@ alias gp="git pull"
 alias gi="git info"
 alias gd="git diff"
 
-alias ls="ls -lhtFG"
 alias nh="node --harmony"
 
 # prompt to show colorized user and location
