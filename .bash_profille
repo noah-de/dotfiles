@@ -1,7 +1,6 @@
 function EXT_COLOR () { echo -ne "\e[38;5;$1m"; }
 function CLOSE_COLOR () { echo -ne '\e[m'; }
 
-
 # git aliases
 alias gti="git"
 alias gs="git status"
@@ -13,9 +12,6 @@ alias nh="node --harmony"
 
 # prompt to show colorized user and location
 export PS1="\[`EXT_COLOR 58`\]\u\[`CLOSE_COLOR`\]@\[`EXT_COLOR 209`\]\H\[`CLOSE_COLOR`\]:\[`EXT_COLOR 148`\]\w\[`CLOSE_COLOR`\]\$ "
-
-
-
 
 export WORKON_HOME=$HOME/envs
 export PROJECT_HOME=$HOME/projects
